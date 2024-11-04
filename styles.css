@@ -191,10 +191,48 @@ section {
   transition: 300ms ease-in-out;
 }
 
-.hero-button:hover {
-  background-color: var(--accent-2);
-  color: var(--primary-color);
-  box-shadow: 6px 6px 0px var(--secondary-color);
+/* Tech Stack Icons in 4x4 Grid with Tooltip Hover Effect */
+.tech-stack-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.tech-stack-icons img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.tech-stack-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip Styling */
+.tech-stack-icons img::after {
+  content: attr(title); /* Tooltip text from title attribute */
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.tech-stack-icons img:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -10px); /* Moves tooltip upwards on hover */
 }
 
 /* ABOUT */
@@ -255,19 +293,29 @@ section {
   font-size: 12px;
 }
 
+.tech-stack-section {
+  text-align: center; /* Center the entire section */
+  margin: 20px 0; /* Space above and below the section */
+}
+
 .tech-stack-grid {
-  width: 65%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
+  grid-template-columns: repeat(4, 1fr); /* 4 icons per row */
+  gap: 15px; /* Space between icons */
+  max-width: 800px; /* Limit the width */
+  margin: 0 auto; /* Center the grid horizontally */
 }
 
 .tech-stack {
-  --size: 30px;
-  width: var(--size);
-  aspect-ratio: 1;
+  width: 60px; /* Fixed width for each icon */
+  height: 60px; /* Fixed height for each icon */
 }
 
+.tech-stack img {
+  width: 100%; /* Fill the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent stretching */
+}
 /* Portfolio container */
 
 #portfolio {
