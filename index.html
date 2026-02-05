@@ -1,227 +1,405 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Mihir Panchal is a software developer and backend engineer focused on scalable systems and data-driven products." />
+    <meta name="color-scheme" content="light dark" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="OSSPH Freefolio - Outlines Template" />
-  <meta property="og:description" content="100% FREE Professional Portfolio Templates - Outlines Template" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://freefolio.web.app/images/outlines.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:alt" content="OSSPH Freefolio">
-  <meta name="twitter:title" content="OSSPH Freefolio - Outlines Template" />
-  <meta name="twitter:description" content="100% FREE Professional Portfolio Templates - Outlines Template" />
+    <meta property="og:title" content="Mihir Panchal — Portfolio" />
+    <meta property="og:description" content="Software developer and backend engineer focused on scalable systems and data-driven products." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mihir Panchal portfolio preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mihir Panchal — Portfolio" />
+    <meta name="twitter:description" content="Software developer and backend engineer focused on scalable systems and data-driven products." />
+    <meta name="twitter:image" content="assets/images/og-preview.png" />
 
-  <link rel="icon" type="image/png" href="./assets/icons/icons8-sun.gif" sizes="16x16">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="stylesheet" type="text/css" href="./styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <script src="script.js" defer></script>
-  <title>Mihir Panchal</title>
-</head>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
 
-<body>
-  <header>
-    <nav class="navbar-nav">
-      <div class="nav-logo">
-        <h1>MP</h1>
-      </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
 
-      <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
+    <title>Mihir Panchal — Portfolio</title>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-      <ul id="primary-nav" class="primary-nav" data-visible="false">
-        <li>
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#portfolio">Projects</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header" data-scrolled="false">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Mihir Panchal home">
+          <span class="brand-mark">MP</span>
+          <span class="brand-text">Mihir Panchal</span>
+        </a>
 
-  <main>
-    <section id="hero">
-      <div class="hero-container">
-        <div class="hero-text-container" data-aos="fade-up">
-          <p>Hey there,</p>
-          <h2>I am Mihir Panchal</h2>
-          <p>A Software Developer</p>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-open="false" aria-hidden="true">
+          <ul class="nav-links" role="list">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+              <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4V2m0 20v-2m8-8h2M2 12h2m14.95 6.95 1.41 1.41M5.64 5.64 4.22 4.22m0 15.56 1.41-1.41M19.78 4.22l-1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5" fill="none" />
+              </svg>
+              <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" stroke="currentColor" stroke-width="1.5" fill="none" />
+              </svg>
+              <span class="sr-only">Toggle theme</span>
+            </button>
+          </div>
         </div>
-        <a href="https://mihir3105.github.io/portfolio/MihirPanchal.pdf" class="hero-button" data-aos="fade-up">Download
-          Resume</a>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <section id="about">
-      <div class="section-highlight" data-aos="fade-up">About</div>
-      <div class="about-container" data-aos="fade-up">
-        <div class="about-card">
-          <section class="about-content">
-            <h2>> About</h2>
-            <p align="justify">
-              I am currently pursuing Master's degree in Computer Science at Concordia University.
-            </p>
-            <p align="justify">I am an aspiring data analyst with a strong foundation in computer science and a keen
-              interest in data-driven decision-making. With experience in developing robust software solutions, I thrive
-              in dynamic and collaborative environments. My journey into data analysis has been fueled by my curiosity
-              to uncover insights from complex datasets and leverage them to solve real-world problems. I am proficient
-              in a variety of programming languages and tools, and I continuously seek opportunities to expand my
-              knowledge and skills. Through my projects, I aim to bridge the gap between software development and data
-              analysis, delivering impactful and innovative solutions.</p>
-            <p></p>
-          </section>
+    <main id="main-content">
+      <section id="hero" class="section hero" data-section="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="hero-title">
+              <p class="eyebrow typing" data-text="Hi, I'm Mihir Panchal">
+                <span class="typing-text">Hi, I'm Mihir Panchal</span>
+              </p>
+              <h1>Software Developer / Backend Engineer</h1>
+            </div>
+            <p class="hero-subtitle">I build reliable backend systems and data-driven products, blending software engineering with analytics to ship clear, scalable solutions.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
+            </div>
+            <ul class="hero-stats" role="list">
+              <li class="stat-chip">MERN + Spring Boot</li>
+              <li class="stat-chip">GraphQL + Redis</li>
+              <li class="stat-chip">Data/ML Projects</li>
+            </ul>
+          </div>
 
-          <section class="about-content tech-stack-section">
-            <h3>My current tech stack</h3>
+          <aside class="hero-panel card reveal">
+            <p class="panel-title">Focus areas</p>
+            <ul class="panel-list" role="list">
+              <li>Backend architecture & API design</li>
+              <li>Analytics pipelines and dashboards</li>
+              <li>Performance tuning and monitoring</li>
+            </ul>
+            <div class="panel-footer">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Open to software & data roles</span>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-            <div class="tech-stack-icons">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/python.svg" alt="Python" title="Python">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pandas.svg" alt="Pandas" title="Pandas">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/numpy.svg" alt="NumPy" title="NumPy">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mysql.svg" alt="MySQL" title="MySQL">
+      <section id="about" class="section" data-section="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A builder who connects engineering and data.</h2>
+            <p class="muted">Currently pursuing a Master’s in Computer Science at Concordia University, with a focus on backend systems and analytics.</p>
+          </header>
 
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tableau.svg" alt="Tableau" title="Tableau">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/microsoftexcel.svg" alt="Excel"
-                title="Excel">
-              <img src="https://img.icons8.com/ios-filled/50/bar-chart.png" alt="Statistics" title="Statistics">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/jupyter.svg" alt="Jupyter Notebook"
-                title="Jupyter Notebook">
-
-              <img src="./assets/icons/Matplotlib.png" alt="Matplotlib" title="Tableau">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/scikitlearn.svg" alt="Scikit-Learn"
-                title="Scikit-Learn">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/powerbi.svg" alt="Power BI" title="Power BI">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/googlecolab.svg" alt="Google Colab"
-                title="Google Colab">
-
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tensorflow.svg" alt="TensorFlow"
-                title="TensorFlow">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/r.svg" alt="R" title="R">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/visualstudiocode.svg" alt="VS Code"
-                title="VS Code">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub" title="GitHub">
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>I enjoy transforming messy requirements into well-structured systems—clean APIs, reliable data flows, and measurable outcomes. I value readable code, thoughtful documentation, and shipping work that is easy to iterate on.</p>
+              <ul class="checklist" role="list">
+                <li>Backend-first mindset with attention to performance and observability.</li>
+                <li>Data and ML projects spanning preprocessing, modeling, and evaluation.</li>
+                <li>Collaborative, feedback-driven development with clear ownership.</li>
+              </ul>
             </div>
 
+            <aside class="about-meta card reveal">
+              <p class="panel-title">Currently</p>
+              <div class="chip-group">
+                <span class="chip">M.S. Computer Science (in progress)</span>
+                <span class="chip">Focus: Backend + Data</span>
+                <span class="chip">Target roles: Software / Analytics</span>
+              </div>
+              <div class="social-links">
+                <a class="social-link" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">
+                  <img src="assets/icons/github-icon.svg" alt="GitHub" width="20" height="20" />
+                  GitHub
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/mihirpanchal1504/" target="_blank" rel="noopener">
+                  <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn" width="20" height="20" />
+                  LinkedIn
+                </a>
+                <a class="social-link" href="mailto:mihir58panchal@gmail.com">
+                  <img src="assets/icons/email-svgrepo-com.svg" alt="Email" width="20" height="20" />
+                  mihir58panchal@gmail.com
+                </a>
+              </div>
+            </aside>
+          </div>
         </div>
-    </section>
-    </div>
-    </div>
-    </section>
+      </section>
 
-    <section id="portfolio">
-      <div class="section-highlight" data-aos="fade-up">Projects</div>
-      <div class="portfolio-container" data-aos="fade-up">
-        <div class="portfolio-card">
-          <div class="portfolio-content">
-            <h2>> Projects</h2>
-            <div class="project-container">
-              <section class="project-card">
-                <h3>Real-Time Chat App</h3>
-                <h5>React, Firebase, WebSockets, Node.js</h5>
-                <p align="justify">
-                  A scalable real-time messaging platform with Firebase Firestore, enabling instant 
-                  communication with dynamic user presence indicators.
-                </p>
+      <section id="projects" class="section" data-section="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Selected work built for scale and impact.</h2>
+            <p class="muted">A mix of backend systems and data-focused builds. Filter by focus area.</p>
+          </header>
 
-                <div class="project-card-links">
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/live-demo.svg" alt="live-demo" />
-                    Live demo
-                  </a>
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/github-icon.svg" alt="live-demo" />
-                    Repository
-                  </a>
+          <div class="filter-bar reveal" role="tablist" aria-label="Project filters">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+            <button class="filter-chip" type="button" data-filter="data" aria-pressed="false">Data</button>
+            <button class="filter-chip" type="button" data-filter="ml" aria-pressed="false">ML</button>
+            <button class="filter-chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card card featured reveal" data-category="backend web">
+              <div class="project-media">
+                <img src="assets/images/forkify-overview.png" alt="Real-time chat application preview" width="1351" height="559" loading="lazy" />
+                <span class="badge">Featured</span>
+              </div>
+              <div class="project-body">
+                <div>
+                  <h3>Real-Time Chat Platform</h3>
+                  <p class="project-summary">Low-latency messaging experience with presence, typing, and read indicators.</p>
+                  <div class="tag-row">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">React</span>
+                  </div>
+                  <ul class="project-points" role="list">
+                    <li>Designed a scalable messaging gateway with authentication and room management.</li>
+                    <li>Structured Firestore collections for fast queries and real-time updates.</li>
+                    <li>Implemented retry + offline handling for smoother reconnects.</li>
+                  </ul>
                 </div>
-              </section>
-
-              <section class="project-card">
-                <h3>CNN for Plant Disease Detection</h3>
-                <h5>Python, PyTorch, MySQL</h5>
-                <p align="justify">
-                  A deep learning-powered system that detects and classifies plant diseases from leaf images using a CNN trained in PyTorch.
-
-                <div class="project-card-links">
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/live-demo.svg" alt="live-demo" />
-                    Live demo
-                  </a>
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/github-icon.svg" alt="live-demo" />
-                    Repository
-                  </a>
+                <div class="project-actions">
+                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
                 </div>
-              </section>
+              </div>
+            </article>
 
-              <section class="project-card">
-                <h3>Automated Attendance System</h3>
-                <h5>Java, Android, MySQL</h5>
-                <p align="justify">
-                  An Android-based attendance tracking system with real-time synchronization to mark attendance and monitor student participation.
-                </p>
-
-                <div class="project-card-links">
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/live-demo.svg" alt="live-demo" />
-                    Live demo
-                  </a>
-                  <a href="#">
-                    <img class="project-icons" src="./assets/icons/github-icon.svg" alt="live-demo" />
-                    Repository
-                  </a>
+            <article class="project-card card featured reveal" data-category="data ml">
+              <div class="project-media">
+                <img src="assets/images/outlines-preview.png" alt="Plant disease detection model preview" width="765" height="317" loading="lazy" />
+                <span class="badge">Featured</span>
+              </div>
+              <div class="project-body">
+                <div>
+                  <h3>CNN for Plant Disease Detection</h3>
+                  <p class="project-summary">Image classification workflow for early plant disease identification.</p>
+                  <div class="tag-row">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Computer Vision</span>
+                  </div>
+                  <ul class="project-points" role="list">
+                    <li>Built preprocessing and augmentation pipelines for consistent training data.</li>
+                    <li>Trained and evaluated CNN models with clear performance reporting.</li>
+                    <li>Stored predictions and metrics for comparative analysis.</li>
+                  </ul>
                 </div>
-              </section>
+                <div class="project-actions">
+                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card card reveal" data-category="backend data">
+              <div class="project-media">
+                <img src="assets/images/chase-overview.png" alt="Automated attendance system preview" width="1348" height="683" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <div>
+                  <h3>Automated Attendance System</h3>
+                  <p class="project-summary">Android attendance workflow with real-time sync and role-based access.</p>
+                  <div class="tag-row">
+                    <span class="tag">Android</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">REST APIs</span>
+                  </div>
+                  <ul class="project-points" role="list">
+                    <li>Designed database schema and endpoints for accurate attendance tracking.</li>
+                    <li>Added offline-safe sync and conflict resolution for unreliable networks.</li>
+                    <li>Implemented admin and faculty dashboards for quick reporting.</li>
+                  </ul>
+                </div>
+                <div class="project-actions">
+                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section" data-section="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">Applied learning with real-world constraints.</h2>
+            <p class="muted">Recent academic and independent work highlighting backend and data delivery.</p>
+          </header>
+
+          <div class="experience-list">
+            <article class="experience-card card reveal is-progress">
+              <div class="experience-header">
+                <div>
+                  <h3>Graduate Projects — Computer Science</h3>
+                  <p class="muted">Concordia University</p>
+                </div>
+                <span class="experience-date">In progress</span>
+              </div>
+              <ul class="experience-points" role="list">
+                <li>Delivered team-based backend and data projects with clear milestones.</li>
+                <li>Applied distributed systems, databases, and ML concepts to production-like workloads.</li>
+                <li>Documented designs and trade-offs for maintainability and peer review.</li>
+              </ul>
+            </article>
+
+            <article class="experience-card card reveal is-progress">
+              <div class="experience-header">
+                <div>
+                  <h3>Independent Software & Data Projects</h3>
+                  <p class="muted">Self-directed</p>
+                </div>
+                <span class="experience-date">Ongoing</span>
+              </div>
+              <ul class="experience-points" role="list">
+                <li>Built full-stack prototypes with clean API contracts and fast iteration cycles.</li>
+                <li>Explored analytics workflows from raw data to insights and dashboards.</li>
+                <li>Focused on code quality, testing, and performance tuning.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" data-section="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Strong breadth with depth in backend + data.</h2>
+            <p class="muted">Grouped for fast scanning. Update these lists as your stack evolves.</p>
+          </header>
+
+          <div class="skills-grid">
+            <div class="skills-card card reveal">
+              <h3>Languages</h3>
+              <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">R</span>
+              </div>
+            </div>
+            <div class="skills-card card reveal">
+              <h3>Backend & APIs</h3>
+              <div class="tag-row">
+                <span class="tag">Node.js</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">REST</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">Redis</span>
+              </div>
+            </div>
+            <div class="skills-card card reveal">
+              <h3>Databases & Cloud</h3>
+              <div class="tag-row">
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+            <div class="skills-card card reveal">
+              <h3>Data & ML</h3>
+              <div class="tag-row">
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Tableau</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <h2 class="section-highlight" data-aos="fade-up">Contacts</h2>
-      <div class="contact-container" data-aos="fade-up">
-        <div class="contact-card">
-          <h2>> Contacts</h2>
-          <div class="contact-links">
-            <a href="https://www.linkedin.com/in/mihirpanchal1504/">
-              <img class="contact-icons" src="./assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
-              LinkedIn
-            </a>
+      <section id="contact" class="section" data-section="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s build something reliable together.</h2>
+            <p class="muted">Open to new opportunities and collaborative projects.</p>
+          </header>
 
-            <a href="mihir58panchal@gmail.com">
-              <img class="contact-icons" src="./assets/icons/email-svgrepo-com.svg" alt="email-icon" />
-              mihir58panchal@gmail.com
-            </a>
+          <div class="contact-card card reveal">
+            <p>Want to talk about backend systems, data platforms, or ML use cases? Send a note and I’ll respond quickly.</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:mihir58panchal@gmail.com">Email Mihir</a>
+              <a class="btn btn-ghost" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
+            </div>
+            <div class="contact-links">
+              <a class="social-link" href="https://www.linkedin.com/in/mihirpanchal1504/" target="_blank" rel="noopener">
+                <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn" width="18" height="18" />
+                LinkedIn
+              </a>
+              <a class="social-link" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">
+                <img src="assets/icons/github-icon.svg" alt="GitHub" width="18" height="18" />
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Mihir Panchal. Built with care.</p>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      Made with 💜 by
-      <a href="https://github.com/MIHIR3105" target="_blank" rel="noopener noreferrer">Mihir Panchal</a>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      delay: 0
-    });
-  </script>
-</body>
-
+    </footer>
+  </body>
 </html>
