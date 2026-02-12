@@ -1,391 +1,414 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mihir Panchal is a software developer and backend engineer focused on scalable systems and data-driven products." />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Mihir Panchal — Backend-focused Software Engineer portfolio." />
 
-    <meta property="og:title" content="Mihir Panchal — Portfolio" />
-    <meta property="og:description" content="Software developer and backend engineer focused on scalable systems and data-driven products." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/og-preview.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Mihir Panchal portfolio preview" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mihir Panchal — Portfolio" />
-    <meta name="twitter:description" content="Software developer and backend engineer focused on scalable systems and data-driven products." />
-    <meta name="twitter:image" content="assets/images/og-preview.png" />
+    <title>Mihir Panchal — Portfolio</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/sections.css" />
-
-    <script src="js/main.js" defer></script>
-    <script src="js/animations.js" defer></script>
-
-    <title>Mihir Panchal — Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="top">
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="site-header" data-scrolled="false">
-      <nav class="nav container" aria-label="Primary">
-        <a class="brand" href="#top" aria-label="Mihir Panchal home">
-          <span class="brand-mark">MP</span>
-          <span class="brand-text">Mihir Panchal</span>
-        </a>
-
-        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </button>
-
-        <div class="nav-menu" id="nav-menu" data-open="false" aria-hidden="true">
-          <ul class="nav-links" role="list">
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-
-          <div class="nav-actions">
-            <a class="btn btn-secondary" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
-            <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-              <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 4V2m0 20v-2m8-8h2M2 12h2m14.95 6.95 1.41 1.41M5.64 5.64 4.22 4.22m0 15.56 1.41-1.41M19.78 4.22l-1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5" fill="none" />
+    <header class="site-header">
+      <nav class="navbar glass-nav" aria-label="Primary">
+        <div class="container-lg nav-wrapper">
+          <a class="brand" href="#top" aria-label="Mihir Panchal home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 7 4 12l4 5M16 7l4 5-4 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" stroke="currentColor" stroke-width="1.5" fill="none" />
-              </svg>
-              <span class="sr-only">Toggle theme</span>
-            </button>
+            </span>
+            <span class="brand-text"><span class="brand-bracket">&lt;/</span>MihirPanchal<span class="brand-bracket">&gt;</span></span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links" role="list">
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#skills">Skills</a></li>
+              <li><a class="nav-link" href="#experience">Experience</a></li>
+              <li><a class="nav-link" href="#projects">Projects</a></li>
+              <li><a class="nav-link" href="#education">Education</a></li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
 
     <main id="main-content">
-      <section id="hero" class="section hero" data-section="hero">
-        <div class="container hero-grid">
-          <div class="hero-content reveal">
-            <div class="hero-title">
-              <p class="eyebrow typing" data-text="Hi, I'm Mihir Panchal">
-                <span class="typing-text">Hi, I'm Mihir Panchal</span>
-              </p>
-              <h1>Software Developer / Backend Engineer</h1>
-            </div>
-            <p class="hero-subtitle">I build reliable backend systems and data-driven products, blending software engineering with analytics to ship clear, scalable solutions.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-ghost" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
-            </div>
-            <ul class="hero-stats" role="list">
-              <li class="stat-chip">MERN + Spring Boot</li>
-              <li class="stat-chip">GraphQL + Redis</li>
-              <li class="stat-chip">Data/ML Projects</li>
-            </ul>
-          </div>
-
-          <aside class="hero-panel card reveal">
-            <p class="panel-title">Focus areas</p>
-            <ul class="panel-list" role="list">
-              <li>Backend architecture & API design</li>
-              <li>Analytics pipelines and dashboards</li>
-              <li>Performance tuning and monitoring</li>
-            </ul>
-            <div class="panel-footer">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Open to software & data roles</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="about" class="section" data-section="about" aria-labelledby="about-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="eyebrow">About</p>
-            <h2 id="about-title">A builder who connects engineering and data.</h2>
-            <p class="muted">Currently pursuing a Master’s in Computer Science at Concordia University, with a focus on backend systems and analytics.</p>
-          </header>
-
-          <div class="about-grid">
-            <div class="about-copy reveal">
-              <p>I enjoy transforming messy requirements into well-structured systems—clean APIs, reliable data flows, and measurable outcomes. I value readable code, thoughtful documentation, and shipping work that is easy to iterate on.</p>
-              <ul class="checklist" role="list">
-                <li>Backend-first mindset with attention to performance and observability.</li>
-                <li>Data and ML projects spanning preprocessing, modeling, and evaluation.</li>
-                <li>Collaborative, feedback-driven development with clear ownership.</li>
-              </ul>
-            </div>
-
-            <aside class="about-meta card reveal">
-              <p class="panel-title">Currently</p>
-              <div class="chip-group">
-                <span class="chip">M.S. Computer Science (in progress)</span>
-                <span class="chip">Focus: Backend + Data</span>
-                <span class="chip">Target roles: Software / Analytics</span>
+      <section id="hero" class="section hero">
+        <div class="container-lg content">
+          <div class="row align-items-center g-5 hero-row">
+            <div class="col-lg-6">
+              <div class="hero-content">
+                <div class="avatar avatar--icon" role="img" aria-label="Fox">
+                  <img class="avatar-img" src="assets/fox.svg" alt="Fox avatar" />
+                </div>
+                <h1 class="hero-name"><span class="hero-bracket">&lt;/</span><span class="hero-name-text">MihirPanchal</span><span class="hero-bracket">&gt;</span></h1>
+                <p class="hero-title">Backend Software Engineer</p>
+                <p class="hero-summary">
+                  Backend-focused engineer building scalable services and real-time systems with Node.js, Express, and MongoDB.
+                  Experienced in API design, database optimization, and CI/CD pipelines.
+                </p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary btn-lg" href="#projects">View Projects</a>
+                  <a class="btn btn-outline-light btn-lg" href="assets/MihirPanchal.pdf" download>Download CV</a>
+                </div>
+                <div class="hero-icons">
+                  <a class="icon-btn" href="https://github.com/MIHIR3105" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                      <path
+                        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.66.5.1.68-.23.68-.5 0-.25-.01-1.06-.02-1.92-2.78.63-3.37-1.23-3.37-1.23-.46-1.2-1.12-1.52-1.12-1.52-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.9 1.6 2.36 1.14 2.94.87.09-.67.35-1.14.64-1.4-2.22-.27-4.56-1.15-4.56-5.12 0-1.13.39-2.06 1.03-2.79-.1-.27-.45-1.36.1-2.83 0 0 .84-.28 2.75 1.06.8-.23 1.66-.34 2.52-.35.86.01 1.72.12 2.52.35 1.9-1.34 2.74-1.06 2.74-1.06.56 1.47.21 2.56.11 2.83.64.73 1.03 1.66 1.03 2.79 0 3.98-2.34 4.84-4.57 5.1.36.33.69.97.69 1.97 0 1.42-.01 2.56-.01 2.91 0 .28.18.61.69.5 3.97-1.34 6.83-5.16 6.83-9.66C22 6.58 17.52 2 12 2Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                  <a class="icon-btn" href="https://www.linkedin.com/in/mihirpanchal3105/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                      <path
+                        d="M6.94 8.5V20H3.45V8.5h3.5ZM5.2 4C4 4 3 4.98 3 6.18c0 1.2 1 2.18 2.2 2.18 1.22 0 2.2-.98 2.2-2.18C7.4 4.98 6.42 4 5.2 4Zm15.33 8.85V20h-3.49v-6.25c0-1.47-.52-2.47-1.82-2.47-.99 0-1.58.68-1.84 1.34-.1.24-.12.58-.12.91V20H9.78s.05-10.47 0-11.5h3.48v1.63c.46-.74 1.29-1.8 3.14-1.8 2.3 0 4.13 1.54 4.13 4.85Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <div class="social-links">
-                <a class="social-link" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">
-                  <img src="assets/icons/github-icon.svg" alt="GitHub" width="20" height="20" />
-                  GitHub
-                </a>
-                <a class="social-link" href="https://www.linkedin.com/in/mihirpanchal1504/" target="_blank" rel="noopener">
-                  <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn" width="20" height="20" />
-                  LinkedIn
-                </a>
-                <a class="social-link" href="mailto:mihir58panchal@gmail.com">
-                  <img src="assets/icons/email-svgrepo-com.svg" alt="Email" width="20" height="20" />
-                  mihir58panchal@gmail.com
-                </a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-visual card-pad reveal" aria-hidden="true">
+                <div class="solar-panel">
+                  <div class="solar-canvas" id="solar-canvas" aria-hidden="true"></div>
+                </div>
+                <p class="hero-visual-caption">Open to SDE roles on Earth</p>
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section" data-section="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="eyebrow">Projects</p>
-            <h2 id="projects-title">Selected work built for scale and impact.</h2>
-            <p class="muted">A mix of backend systems and data-focused builds. Filter by focus area.</p>
+      <section id="about" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">About Me</p>
+            <h2>Backend engineer focused on dependable systems.</h2>
+            <p class="section-subtitle">Building APIs, data services, and real-time applications that scale with clarity.</p>
           </header>
-
-          <div class="filter-bar reveal" role="tablist" aria-label="Project filters">
-            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-chip" type="button" data-filter="backend" aria-pressed="false">Backend</button>
-            <button class="filter-chip" type="button" data-filter="data" aria-pressed="false">Data</button>
-            <button class="filter-chip" type="button" data-filter="ml" aria-pressed="false">ML</button>
-            <button class="filter-chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <div class="glass-card card-pad reveal">
+            <p>
+              I build backend services with a focus on scalability and reliability, including GraphQL and REST APIs,
+              MongoDB/MySQL data modeling, and real-time features. I enjoy shipping clean, maintainable systems with
+              strong testing and CI/CD practices.
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div class="projects-grid">
-            <article class="project-card card featured reveal" data-category="backend web">
-              <div class="project-media">
-                <img src="assets/images/forkify-overview.png" alt="Real-time chat application preview" width="1351" height="559" loading="lazy" />
-                <span class="badge">Featured</span>
+      <section id="skills" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Technical Skills</p>
+            <h2>Core stacks I work with.</h2>
+          </header>
+          <div class="row g-4 equal-height">
+            <div class="col-md-6">
+              <div class="glass-card card-pad skill-card reveal h-100">
+                <h3>Languages</h3>
+                <div class="chip-group">
+                  <span class="chip chip--icon"><i class="devicon-c-plain"></i><span>C</span></span>
+                  <span class="chip chip--icon"><i class="devicon-cplusplus-plain"></i><span>C++</span></span>
+                  <span class="chip chip--icon"><i class="devicon-java-plain"></i><span>Java</span></span>
+                  <span class="chip chip--icon"><i class="devicon-javascript-plain"></i><span>JavaScript</span></span>
+                  <span class="chip chip--icon"><i class="devicon-typescript-plain"></i><span>TypeScript</span></span>
+                  <span class="chip chip--icon"><i class="devicon-python-plain"></i><span>Python</span></span>
+                  <span class="chip chip--icon"><i class="bi bi-database"></i><span>SQL</span></span>
+                </div>
               </div>
-              <div class="project-body">
-                <div>
-                  <h3>Real-Time Chat Platform</h3>
-                  <p class="project-summary">Low-latency messaging experience with presence, typing, and read indicators.</p>
-                  <div class="tag-row">
-                    <span class="tag">Node.js</span>
-                    <span class="tag">WebSockets</span>
-                    <span class="tag">Firebase</span>
-                    <span class="tag">React</span>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card card-pad skill-card reveal h-100">
+                <h3>Frameworks & APIs</h3>
+                <div class="chip-group">
+                  <span class="chip chip--icon"><i class="devicon-nodejs-plain"></i><span>Node.js</span></span>
+                  <span class="chip chip--icon"><i class="devicon-express-original"></i><span>Express</span></span>
+                  <span class="chip chip--icon"><i class="devicon-react-original"></i><span>React</span></span>
+                  <span class="chip chip--icon"><i class="devicon-flask-original"></i><span>Flask</span></span>
+                  <span class="chip chip--icon"><i class="bi bi-link-45deg"></i><span>REST APIs</span></span>
+                  <span class="chip chip--icon"><i class="devicon-graphql-plain"></i><span>GraphQL</span></span>
+                  <span class="chip chip--icon"><i class="bi bi-broadcast"></i><span>WebSockets</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card card-pad skill-card reveal h-100">
+                <h3>Databases</h3>
+                <div class="chip-group">
+                  <span class="chip chip--icon"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></span>
+                  <span class="chip chip--icon"><i class="devicon-mysql-plain"></i><span>MySQL</span></span>
+                  <span class="chip chip--icon"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></span>
+                  <span class="chip chip--icon"><i class="devicon-firebase-plain"></i><span>Firebase</span></span>
+                  <span class="chip chip--icon"><i class="devicon-redis-plain"></i><span>Redis</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card card-pad skill-card reveal h-100">
+                <h3>Developer Tools</h3>
+                <div class="chip-group">
+                  <span class="chip chip--icon"><i class="devicon-git-plain"></i><span>Git/GitHub</span></span>
+                  <span class="chip chip--icon"><i class="devicon-docker-plain"></i><span>Docker</span></span>
+                  <span class="chip chip--icon"><i class="devicon-jenkins-line"></i><span>Jenkins</span></span>
+                  <span class="chip chip--icon"><img class="chip-icon" src="assets/postman.svg" alt="" aria-hidden="true" /><span>Postman</span></span>
+                  <span class="chip chip--icon"><i class="devicon-vscode-plain"></i><span>VS Code</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Experience</p>
+            <h2>Hands-on delivery across backend and full-stack.</h2>
+          </header>
+          <div class="row g-4">
+            <div class="col-12">
+              <article class="glass-card card-pad experience-card reveal">
+                <div class="experience-header">
+                  <div>
+                    <h3>Software Engineer</h3>
+                    <p class="muted">Niravadhi Technologies Private LTD · Aug 2022 – Mar 2023</p>
                   </div>
-                  <ul class="project-points" role="list">
-                    <li>Designed a scalable messaging gateway with authentication and room management.</li>
-                    <li>Structured Firestore collections for fast queries and real-time updates.</li>
-                    <li>Implemented retry + offline handling for smoother reconnects.</li>
-                  </ul>
+                  <span class="chip chip-role">Backend</span>
                 </div>
-                <div class="project-actions">
-                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
-                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card card featured reveal" data-category="data ml">
-              <div class="project-media">
-                <img src="assets/images/outlines-preview.png" alt="Plant disease detection model preview" width="765" height="317" loading="lazy" />
-                <span class="badge">Featured</span>
-              </div>
-              <div class="project-body">
-                <div>
-                  <h3>CNN for Plant Disease Detection</h3>
-                  <p class="project-summary">Image classification workflow for early plant disease identification.</p>
-                  <div class="tag-row">
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">Computer Vision</span>
+                <ul class="experience-list" role="list">
+                  <li>Built scalable backend services for the “Wall” web app with Node.js, Express.js, and MongoDB.</li>
+                  <li>Designed GraphQL APIs and supported a 50% user growth without performance degradation.</li>
+                  <li>Automated testing and CI/CD pipelines using Jenkins, Mocha, Docker, and Kubernetes.</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-12">
+              <article class="glass-card card-pad experience-card reveal">
+                <div class="experience-header">
+                  <div>
+                    <h3>Full-Stack Development Intern</h3>
+                    <p class="muted">Unnati Informatics LLP · Jan 2022 – Jun 2022</p>
                   </div>
-                  <ul class="project-points" role="list">
-                    <li>Built preprocessing and augmentation pipelines for consistent training data.</li>
-                    <li>Trained and evaluated CNN models with clear performance reporting.</li>
-                    <li>Stored predictions and metrics for comparative analysis.</li>
-                  </ul>
+                  <span class="chip chip-role">Full-Stack</span>
                 </div>
-                <div class="project-actions">
-                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
-                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
-                </div>
-              </div>
-            </article>
+                <ul class="experience-list" role="list">
+                  <li>Developed HR portal features using the MERN stack and RESTful APIs.</li>
+                  <li>Optimized MongoDB queries and indexing, reducing API response times by 40%.</li>
+                  <li>Built reusable React components and collaborated using Git/GitHub workflows.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <article class="project-card card reveal" data-category="backend data">
-              <div class="project-media">
-                <img src="assets/images/chase-overview.png" alt="Automated attendance system preview" width="1348" height="683" loading="lazy" />
-              </div>
-              <div class="project-body">
-                <div>
-                  <h3>Automated Attendance System</h3>
-                  <p class="project-summary">Android attendance workflow with real-time sync and role-based access.</p>
-                  <div class="tag-row">
-                    <span class="tag">Android</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">REST APIs</span>
+      <section id="projects" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Projects</p>
+            <h2>Selected builds focused on backend impact.</h2>
+          </header>
+          <div class="row g-4 equal-height">
+            <div class="col-lg-6">
+              <article class="glass-card project-card reveal h-100">
+                <div class="project-media">
+                  <img src="assets/images/outlines-preview.png" alt="Plant disease detection project preview" loading="lazy" />
+                </div>
+                <div class="project-body">
+                  <h3>Plant Disease Detection using CNNs</h3>
+                  <p class="muted">Built a CNN model with PyTorch and delivered real-time predictions via Flask + MySQL.</p>
+                  <div class="chip-group">
+                    <span class="chip chip--icon"><i class="devicon-python-plain"></i><span>Python</span></span>
+                    <span class="chip chip--icon"><i class="devicon-pytorch-original"></i><span>PyTorch</span></span>
+                    <span class="chip chip--icon"><i class="devicon-flask-original"></i><span>Flask</span></span>
+                    <span class="chip chip--icon"><i class="devicon-mysql-plain"></i><span>MySQL</span></span>
                   </div>
-                  <ul class="project-points" role="list">
-                    <li>Designed database schema and endpoints for accurate attendance tracking.</li>
-                    <li>Added offline-safe sync and conflict resolution for unreliable networks.</li>
-                    <li>Implemented admin and faculty dashboards for quick reporting.</li>
-                  </ul>
+                  <div class="project-actions">
+                    <a class="btn btn-outline-light btn-sm" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn btn-primary btn-sm" href="#contact">Discuss</a>
+                  </div>
                 </div>
-                <div class="project-actions">
-                  <a class="btn btn-ghost" href="#contact">Live Demo</a>
-                  <a class="btn btn-secondary" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub Repo</a>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="glass-card project-card reveal h-100">
+                <div class="project-media">
+                  <img src="assets/images/forkify-overview.png" alt="Real-time chat app preview" loading="lazy" />
                 </div>
-              </div>
-            </article>
+                <div class="project-body">
+                  <h3>PulseChat Real-Time Chat App</h3>
+                  <p class="muted">Scalable messaging app with WebSockets, Firebase auth, and live presence.</p>
+                  <div class="chip-group">
+                    <span class="chip chip--icon"><i class="devicon-nodejs-plain"></i><span>Node.js</span></span>
+                    <span class="chip chip--icon"><i class="bi bi-broadcast"></i><span>WebSockets</span></span>
+                    <span class="chip chip--icon"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></span>
+                    <span class="chip chip--icon"><i class="devicon-firebase-plain"></i><span>Firebase</span></span>
+                    <span class="chip chip--icon"><i class="devicon-react-original"></i><span>React</span></span>
+                  </div>
+                  <div class="project-actions">
+                    <a class="btn btn-outline-light btn-sm" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn btn-primary btn-sm" href="#contact">Discuss</a>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="section" data-section="experience" aria-labelledby="experience-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="eyebrow">Experience</p>
-            <h2 id="experience-title">Applied learning with real-world constraints.</h2>
-            <p class="muted">Recent academic and independent work highlighting backend and data delivery.</p>
+      <section id="education" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Education</p>
+            <h2>Academic background.</h2>
           </header>
-
-          <div class="experience-list">
-            <article class="experience-card card reveal is-progress">
-              <div class="experience-header">
-                <div>
-                  <h3>Graduate Projects — Computer Science</h3>
-                  <p class="muted">Concordia University</p>
-                </div>
-                <span class="experience-date">In progress</span>
+          <div class="glass-card card-pad reveal">
+            <div class="education-item">
+              <div>
+                <h3>M.Sc. Computer Science</h3>
+                <p class="muted">Concordia University · Montréal, QC</p>
               </div>
-              <ul class="experience-points" role="list">
-                <li>Delivered team-based backend and data projects with clear milestones.</li>
-                <li>Applied distributed systems, databases, and ML concepts to production-like workloads.</li>
-                <li>Documented designs and trade-offs for maintainability and peer review.</li>
-              </ul>
-            </article>
-
-            <article class="experience-card card reveal is-progress">
-              <div class="experience-header">
-                <div>
-                  <h3>Independent Software & Data Projects</h3>
-                  <p class="muted">Self-directed</p>
-                </div>
-                <span class="experience-date">Ongoing</span>
+              <span class="muted">Jan 2024 – Dec 2025</span>
+            </div>
+            <div class="divider"></div>
+            <div class="education-item">
+              <div>
+                <h3>B.E. Computer Engineering</h3>
+                <p class="muted">Gujarat Technological University · Gujarat, India</p>
               </div>
-              <ul class="experience-points" role="list">
-                <li>Built full-stack prototypes with clean API contracts and fast iteration cycles.</li>
-                <li>Explored analytics workflows from raw data to insights and dashboards.</li>
-                <li>Focused on code quality, testing, and performance tuning.</li>
-              </ul>
-            </article>
+              <span class="muted">Aug 2019 – May 2022</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section" data-section="skills" aria-labelledby="skills-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="eyebrow">Skills</p>
-            <h2 id="skills-title">Strong breadth with depth in backend + data.</h2>
-            <p class="muted">Grouped for fast scanning. Update these lists as your stack evolves.</p>
+      <section id="certifications" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Certifications & Publication</p>
+            <h2>Continuous learning and research.</h2>
           </header>
-
-          <div class="skills-grid">
-            <div class="skills-card card reveal">
-              <h3>Languages</h3>
-              <div class="tag-row">
-                <span class="tag">Java</span>
-                <span class="tag">Python</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">SQL</span>
-                <span class="tag">R</span>
+          <div class="row g-4 equal-height">
+            <div class="col-lg-6">
+              <div class="glass-card card-pad reveal h-100">
+                <h3>Certifications</h3>
+                <ul class="list-unstyled mt-3">
+                  <li>Python for Data Science and Machine Learning Bootcamp</li>
+                  <li>Python Data Structures</li>
+                  <li>Complete Python Bootcamp</li>
+                </ul>
               </div>
             </div>
-            <div class="skills-card card reveal">
-              <h3>Backend & APIs</h3>
-              <div class="tag-row">
-                <span class="tag">Node.js</span>
-                <span class="tag">Spring Boot</span>
-                <span class="tag">REST</span>
-                <span class="tag">GraphQL</span>
-                <span class="tag">Redis</span>
-              </div>
-            </div>
-            <div class="skills-card card reveal">
-              <h3>Databases & Cloud</h3>
-              <div class="tag-row">
-                <span class="tag">MySQL</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">Docker</span>
-                <span class="tag">AWS</span>
-              </div>
-            </div>
-            <div class="skills-card card reveal">
-              <h3>Data & ML</h3>
-              <div class="tag-row">
-                <span class="tag">Pandas</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">PyTorch</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Tableau</span>
+            <div class="col-lg-6">
+              <div class="glass-card card-pad reveal h-100">
+                <h3>Publication</h3>
+                <p class="mt-3">
+                  Blockchain-Based Software-Defined Vehicular Networks for Intelligent Transportation System Beyond 5G.
+                </p>
+                <p class="muted">Explores blockchain integration for secure vehicular communication and SDN-based coordination.</p>
+                <a
+                  class="btn btn-outline-light btn-sm mt-3"
+                  href="https://link.springer.com/chapter/10.1007/978-3-030-87049-2_17"
+                  target="_blank"
+                  rel="noopener"
+                >Read on Springer</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section" data-section="contact" aria-labelledby="contact-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Let’s build something reliable together.</h2>
-            <p class="muted">Open to new opportunities and collaborative projects.</p>
+      <section id="contact" class="section">
+        <div class="container-lg content">
+          <header class="section-heading text-center reveal">
+            <p class="section-kicker">Contact</p>
+            <h2>Let’s build something reliable together.</h2>
           </header>
-
-          <div class="contact-card card reveal">
-            <p>Want to talk about backend systems, data platforms, or ML use cases? Send a note and I’ll respond quickly.</p>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:mihir58panchal@gmail.com">Email Mihir</a>
-              <a class="btn btn-ghost" href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <div class="contact-info reveal">
+                <h3>Get in touch</h3>
+                <p class="muted">Open to backend software roles, collaborations, and project discussions.</p>
+                <ul class="contact-list" role="list">
+                  <li>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:mihir58panchal@gmail.com">mihir58panchal@gmail.com</a>
+                  </li>
+                  <li>
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+13437778265">+1 343-777-8265</a>
+                  </li>
+                  <li>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/MIHIR3105" target="_blank" rel="noopener">github.com/MIHIR3105</a>
+                  </li>
+                  <li>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/mihirpanchal3105/" target="_blank" rel="noopener">linkedin.com/in/mihirpanchal3105</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="contact-links">
-              <a class="social-link" href="https://www.linkedin.com/in/mihirpanchal1504/" target="_blank" rel="noopener">
-                <img src="assets/icons/linkedin-icon.svg" alt="LinkedIn" width="18" height="18" />
-                LinkedIn
-              </a>
-              <a class="social-link" href="https://github.com/MIHIR3105" target="_blank" rel="noopener">
-                <img src="assets/icons/github-icon.svg" alt="GitHub" width="18" height="18" />
-                GitHub
-              </a>
+            <div class="col-lg-7">
+              <div class="glass-card card-pad reveal">
+                <form id="contact-form" action="https://formspree.io/f/mvzbznbb" method="POST">
+                  <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+                  <input class="hp-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-name">Name</label>
+                      <input class="form-control" type="text" id="contact-name" name="name" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-email">Email</label>
+                      <input class="form-control" type="email" id="contact-email" name="email" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contact-subject">Subject</label>
+                      <input class="form-control" type="text" id="contact-subject" name="subject" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contact-message">Message</label>
+                      <textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -393,13 +416,22 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-content">
-        <p>© <span id="year"></span> Mihir Panchal. Built with care.</p>
+      <div class="container-lg content footer-content">
+        <p>© 2026 Mihir Panchal. All rights reserved.</p>
         <div class="footer-links">
           <a href="#top">Back to top</a>
-          <a href="assets/MihirPanchal.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="assets/MihirPanchal.pdf" download>Download CV</a>
         </div>
       </div>
     </footer>
+
+    <div class="toast-message" id="toast" role="status" aria-live="polite">Message sent (demo)</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
